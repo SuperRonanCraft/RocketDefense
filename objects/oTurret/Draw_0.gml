@@ -8,3 +8,4 @@ if (scMouseHovering(bbox_left, bbox_top, bbox_right, bbox_bottom)) {
 		scTurretEdit(id);
 }
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, placeable ? c_white : c_red, image_alpha);
+draw_sprite_ext(turret_map[? TURRETS_MAP.SPRITE_HEAD], 0, x, y, image_xscale, image_yscale, direction, placeable ? c_white : c_red, image_alpha);

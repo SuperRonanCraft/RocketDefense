@@ -11,7 +11,7 @@ turrets_placing = false;
 mouse_x_old = device_mouse_x_to_gui(0);
 mouse_y_old = device_mouse_y_to_gui(0);
 
-var val = TURRETS.CANNON;
+/*var val = TURRETS.CANNON;
 turrets[val] = ds_map_create();
 ds_map_add(turrets[val], TURRETS_MAP.RADIUS, 50);
 ds_map_add(turrets[val], TURRETS_MAP.COST, 50);

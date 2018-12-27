@@ -4,7 +4,7 @@ original_xscale = image_xscale;
 original_yscale = image_yscale;
 
 //Speed to grow the rocket
-scale_speed = ((image_xscale + image_yscale) / 2) / 10;
+scale_speed = ((image_xscale + image_yscale) / 2) / 5;
 
 image_xscale /= 4;
 image_yscale /= 4;

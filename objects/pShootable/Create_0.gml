@@ -4,6 +4,8 @@
 hp_original = global.hp_enemy;
 hp = hp_original;
 
+shot_last = 0;
+
 //Show when hit
 //flash = 0;
 

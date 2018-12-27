@@ -8,7 +8,7 @@ if (weapon_map[? WEAPON_MAP.PROJECTILE] == -1 || weapon_map[? WEAPON_MAP.TYPE] =
 if (current_delay == 0) {
 	if (ammo != 0) {
 		var offset = weapon_map[? WEAPON_MAP.OFFSET];
-		with (instance_create_depth(x + lengthdir_x(offset, direction), y + lengthdir_y(offset, direction), depth + 1, oWeapon)) {
+		with (instance_create_depth(x + lengthdir_x(offset, direction), y + lengthdir_y(offset, direction), depth - 1, oWeapon)) {
 			direction = other.direction;
 			image_angle = direction;
 			sprite_index = other.weapon_map[? WEAPON_MAP.PROJECTILE];

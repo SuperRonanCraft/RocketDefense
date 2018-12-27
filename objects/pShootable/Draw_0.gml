@@ -2,4 +2,7 @@
 
 draw_self();
 //Display health
-draw_healthbar(x - 20, bbox_bottom, x + 20, bbox_bottom + 4, (hp / hp_original) * 100, c_black, c_red, c_green, 0, true, true);
+if (shot_last > 0) {
+	shot_last--;
+	draw_healthbar(x - 12, bbox_top - 4, x + 12, bbox_top - 2, (hp / hp_original) * 100, c_black, c_red, c_lime, 0, true, true);
+}

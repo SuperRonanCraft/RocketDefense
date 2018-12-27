@@ -1,8 +1,8 @@
 {
-    "id": "53049575-5396-4090-83b3-11ab90e7ac8b",
+    "id": "a311c3a5-cc51-4dba-8d99-cd14a72a6619",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scTurretGet",
+    "name": "scTurretDefaults",
     "IsCompatibility": false,
     "IsDnD": false
 }
