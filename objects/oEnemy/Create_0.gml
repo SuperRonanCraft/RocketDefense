@@ -2,3 +2,5 @@
 event_inherited();
 
 path_start(path0, global.spd, 0, 1);
+
+killed = true;

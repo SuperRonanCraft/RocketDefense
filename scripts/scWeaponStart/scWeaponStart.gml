@@ -1,6 +1,7 @@
 /// @desc Load all rockets and set the default rocket
 /// @arg default-weapon
 
+var buff_spd = turret_map[? TURRETS_MAP.WEAPON_SPEEDBUFF];
 //DEFAULT
 wep = WEAPON.DEFAULT;
 weapons[wep] = ds_map_create();
@@ -10,7 +11,7 @@ ds_map_add(weapons[wep], WEAPON_MAP.DESCRIPTION, "Explosive  device");
 ds_map_add(weapons[wep], WEAPON_MAP.RECOIL, 2);
 ds_map_add(weapons[wep], WEAPON_MAP.PROJECTILE, WEAPON_SPRITE.DEFAULT);
 ds_map_add(weapons[wep], WEAPON_MAP.COOLDOWN, 20);
-ds_map_add(weapons[wep], WEAPON_MAP.SPEED, 4);
+ds_map_add(weapons[wep], WEAPON_MAP.SPEED, 4 * buff_spd);
 
 enum WEAPON {
 	NONE,

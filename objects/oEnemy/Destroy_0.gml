@@ -1,3 +1,4 @@
 /// @desc
 
-global.coins += 20;
+if (killed)
+	global.coins += 20;

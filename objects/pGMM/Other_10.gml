@@ -1,9 +1,10 @@
 /// @desc draw button
 
-var arry = button[display], c = c_black, c2 = c_aqua;
+var arry = button, c = c_black, c2 = c_aqua;
 var x1 = arry[0], y1 = arry[1], x2 = arry[2], y2 = arry[3];
+draw_set_alpha(0.4);
 draw_rectangle_color(x1, y1, x2, y2, c, c, c, c, true);
-draw_rectangle_color(x1, y1, x2, y2, c2, c2, c2, c2, false);
+draw_set_alpha(1);
 var text = display == DISPLAY_TYPE.CLOSED ? "OPEN" : "CLOSE", scale = 0.4;
 
 if (scMouseHovering(x1, y1, x2, y2)) {

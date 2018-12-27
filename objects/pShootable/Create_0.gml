@@ -1,7 +1,7 @@
 /// @desc 
 
 //Health
-hp_original = global.hp;
+hp_original = global.hp_enemy;
 hp = hp_original;
 
 //Show when hit

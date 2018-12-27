@@ -11,7 +11,7 @@ if (owner != other.id) {
 	for (var i = 0; i < ds_list_size(hitList); i++)
 		if (ds_list_find_index(confirmList, hitList[| i]) == -1) {
 			ds_list_add(confirmList, hitList[| i]);
-			var dmg = weapon_map[? WEAPON_MAP.DAMAGE];
+			var dmg = weapon_map[? WEAPON_MAP.DAMAGE] * turret_map[? TURRETS_MAP.WEAPON_DAMAGEBUFF];
 			if (dmg != -1 && weapon_map[? WEAPON_MAP.DAMAGE_DIRECT] != 0)
 				dmg = weapon_map[? WEAPON_MAP.DAMAGE_DIRECT];
 			//Damage player

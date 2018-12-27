@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "e877766a-a599-433e-b959-899c69b1d2a3",
+            "Value": {
+                "id": "8874014a-0ffa-470b-b240-afec03cf612c",
+                "resourcePath": "scripts\\scTurretEdit\\scTurretEdit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e9299095-87f4-4b5e-a689-8746fbc3f450",
             "Value": {
                 "id": "95a41fc2-22b7-425c-ae5c-23ddc847580a",
@@ -497,7 +505,8 @@
         "e9299095-87f4-4b5e-a689-8746fbc3f450",
         "8b3f6bba-da8b-4db7-9049-70ff5341c04b",
         "27b0d615-2fba-4f17-abd9-48c282d140de",
-        "b6dbed9e-04a1-459a-b6bb-70e9a8a20742"
+        "b6dbed9e-04a1-459a-b6bb-70e9a8a20742",
+        "e877766a-a599-433e-b959-899c69b1d2a3"
     ],
     "tutorial": ""
 }
