@@ -1,24 +1,104 @@
 {
-    "id": "76b13d6e-d6b6-400d-a0c8-f64fde5eccb6",
+    "id": "74999e60-f66b-4ad3-a200-57ea6fcbbe8d",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "oGame",
     "eventList": [
         {
-            "id": "def0cbe7-60ea-413d-a051-9fd92cdbc99b",
+            "id": "6c40332e-7990-45a9-9c8f-3c903af29f21",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "76b13d6e-d6b6-400d-a0c8-f64fde5eccb6"
+            "m_owner": "74999e60-f66b-4ad3-a200-57ea6fcbbe8d"
+        },
+        {
+            "id": "0adf971a-22f5-44f5-ad50-1d3c02e15cab",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 82,
+            "eventtype": 9,
+            "m_owner": "74999e60-f66b-4ad3-a200-57ea6fcbbe8d"
+        },
+        {
+            "id": "f59dd1a1-4e0c-49ac-9a90-31ddcb00730b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "74999e60-f66b-4ad3-a200-57ea6fcbbe8d"
+        },
+        {
+            "id": "3affce3e-d1be-46e2-824f-9f02327389cc",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 17,
+            "eventtype": 5,
+            "m_owner": "74999e60-f66b-4ad3-a200-57ea6fcbbe8d"
+        },
+        {
+            "id": "1027e55e-07e4-4c02-93a8-6d3f6d8652f0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 17,
+            "eventtype": 10,
+            "m_owner": "74999e60-f66b-4ad3-a200-57ea6fcbbe8d"
+        },
+        {
+            "id": "6b4e3693-3f8d-4607-b220-41763b5f59a7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 27,
+            "eventtype": 9,
+            "m_owner": "74999e60-f66b-4ad3-a200-57ea6fcbbe8d"
+        },
+        {
+            "id": "17a08e12-29bd-49ac-8203-de06d9f50638",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "74999e60-f66b-4ad3-a200-57ea6fcbbe8d"
+        },
+        {
+            "id": "bdf9f8c4-df3e-49a8-aa98-3bd7363ece2a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 11,
+            "eventtype": 7,
+            "m_owner": "74999e60-f66b-4ad3-a200-57ea6fcbbe8d"
+        },
+        {
+            "id": "604058bf-b5d2-4ba0-926f-257fb41c30c8",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 12,
+            "eventtype": 7,
+            "m_owner": "74999e60-f66b-4ad3-a200-57ea6fcbbe8d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -34,5 +114,5 @@
     "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": false
+    "visible": true
 }

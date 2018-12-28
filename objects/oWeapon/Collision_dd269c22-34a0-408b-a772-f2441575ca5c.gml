@@ -15,7 +15,7 @@ if (owner != other.id) {
 			if (dmg != -1 && weapon_map[? WEAPON_MAP.DAMAGE_DIRECT] != 0)
 				dmg = weapon_map[? WEAPON_MAP.DAMAGE_DIRECT];
 			//Damage player
-			scHitShootable(hitList[| i], owner, dmg);
+			scEnemyHit(hitList[| i], owner, dmg);
 			//Add buff
 			//if (weapon_map[? ROCKET_MAP.BUFF] != noone)
 				//scAddBuff(weapon_map[? WEAPON_MAP.BUFF], hitList[| i]);

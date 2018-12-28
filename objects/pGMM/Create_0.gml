@@ -31,6 +31,7 @@ timer = 0;
 
 health_sprite = sHealth;
 health_sprite_width = sprite_get_width(health_sprite);
+health_scale = 1;
 health_barlen = 100;
 
 ui_height[DISPLAY_TYPE.CLOSED] = RES_H - (ui_font_height + (ui_ybuffer * 2)); //x1, y1, x2, y2 OPEN THE MENU
@@ -40,13 +41,15 @@ ui_height_current = ui_height[display];
 ui_x1 = 0;
 ui_x2 = RES_W;
 
+turrets_title = "TURRETS";
 turrets_x = RES_W - 50;
-turrets_y = RES_H - 75;
+turrets_y = 50;
 turrets_offset = 64;
 turrets_option = 0;
 turrets_height = 32;
 turrets_length = 32;
 turrets_placing = false;
+turrets_editting = noone;
 
 mouse_x_old = device_mouse_x_to_gui(0);
 mouse_y_old = device_mouse_y_to_gui(0);

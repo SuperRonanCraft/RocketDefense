@@ -1,5 +1,5 @@
 /// @desc 
 
-global.hp--;
+scEnemyPathEnd();
 killed = false;
 instance_destroy();

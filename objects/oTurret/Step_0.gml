@@ -4,10 +4,14 @@
 if (placing) {
 	placeable = !place_meeting(x, y, oPath) && !place_meeting(x, y, object_index);
 	if (mouse_check_button_pressed(mb_left)) {
-		if (placeable) {
+		if (placeable && scTurretCanPlace(turret_map[? TURRETS_MAP.COST])) {
 			placing = false;
 			owner.turrets_placing = false;
+			scWeaponStart(turret_map[? TURRETS_MAP.WEAPON]);
 		}
+	} else if (mouse_check_button_pressed(mb_right)) {
+		owner.turrets_placing = false;
+		instance_destroy();
 	} else {
 		if (global.grid_snap) {
 			var size = GRID_SIZE, offset = size / 2;

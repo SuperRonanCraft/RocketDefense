@@ -1,19 +1,35 @@
-/// @desc editting a turret
+/// @desc draw ui
 
-event_user(1); //Draw ui
-event_user(0); //Draw ui button
+var c = c_black, c2 = c_aqua;
+var targety1 = ui_height[display];
+var x1 = ui_x1, y1 = ui_height_current, x2 = ui_x2, y2 = RES_H;
+
+if (y1 != targety1) {
+	var rate = 10;
+	if (y1 > targety1)
+		y1 = max(y1 - rate, targety1);
+	else if (y1 < targety1)
+	    y1 = min(y1 + rate, targety1);
+	ui_height_current = y1;
+}
+
+//ui box
+scDrawRect(x1, y1, x2, y2, c2, false, 0.4);
+scDrawLine(x1, y1, x2, y1, 1, 0.4);
+
+//Main ui
 switch (display) {
 	case DISPLAY_TYPE.OPEN:
-		for (var i = 0; i < array_length_1d(turrets); i++) {
-			var map = turrets[i], xx = turrets_x - (turrets_offset * i), yy = turrets_y;
-			var scale = i == turrets_option ? 1.2 : 1, scale2 = i == turrets_option ? 0.5 : 0.4;
-			draw_sprite_ext(map[? TURRETS_MAP.SPRITE], 0, xx, yy, scale, scale, 0, c_white, 1);
-			var str = string(map[? TURRETS_MAP.COST]);
-			scDrawText(xx, yy, str, c_white, scale2);
-		}
+		event_user(1);
 		break;
 	case DISPLAY_TYPE.CLOSED:
+		if (ui_height_current != targety1)
+			event_user(1);
 		break;
 	case DISPLAY_TYPE.EDITTING:
+		event_user(1);
+		event_user(2);
 		break;
 }
+
+event_user(0); //Draw ui buttons
