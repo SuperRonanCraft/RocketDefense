@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "bbf26c29-9222-4737-aa12-9d4ff105690f",
+            "Value": {
+                "id": "64ed56a7-25f9-4498-b8a1-37890760bf8a",
+                "resourcePath": "scripts\\scTurretTarget\\scTurretTarget.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bc205e8b-9dc4-4a5d-bfcb-d439c4f917f8",
             "Value": {
                 "id": "017a6ffc-6125-48d0-aa3c-87a0b2555ea7",
@@ -621,13 +629,14 @@
         "ab738f93-ad7a-45aa-a119-240062d21cca",
         "02b336b5-7467-4576-8a97-db9d380154a7",
         "e9299095-87f4-4b5e-a689-8746fbc3f450",
+        "e877766a-a599-433e-b959-899c69b1d2a3",
         "53049575-5396-4090-83b3-11ab90e7ac8b",
         "a311c3a5-cc51-4dba-8d99-cd14a72a6619",
+        "bbf26c29-9222-4737-aa12-9d4ff105690f",
         "e6b8affc-c3aa-4947-a55e-536ff42884dd",
         "e6886c51-be38-4377-923a-93a466e874f3",
         "108a0025-6ae2-4858-8e9e-68b39b4f1eb3",
         "27b0d615-2fba-4f17-abd9-48c282d140de",
-        "e877766a-a599-433e-b959-899c69b1d2a3",
         "aacbfef1-4b19-4a12-8a82-55113dd242fd",
         "491c7c79-b483-4a1c-997d-455eb528fb17",
         "10f58b08-0894-4fc8-a43a-b06dc142944a",

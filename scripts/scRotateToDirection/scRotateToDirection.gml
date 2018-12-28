@@ -16,5 +16,5 @@ if (abs(angleDiff) > 180) {
 
 if (angleDiff > accuracy)
     objToTurn.direction -= turnSpeed;
-else if(angleDiff < accuracy)
+else if (angleDiff < accuracy)
     objToTurn.direction += turnSpeed;

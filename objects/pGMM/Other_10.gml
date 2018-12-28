@@ -9,7 +9,7 @@ var x1, x2, y1 = RES_H - (ui_font_height + (ui_ybuffer * 2)), y2 = RES_H, ymid =
 //Coins
 var text_open = display == DISPLAY_TYPE.CLOSED ? "OPEN" : "CLOSE", scale = 0.4;
 var text = string(global.coins);
-x1 = x2right - string_width(text) - coins_sprite_width - (ui_xbuffer * 3);
+x1 = x2right - (string_width(text) * ui_font_scale) - (coins_sprite_width / 2) - (ui_xbuffer * 3);
 x2 = x2right;
 x2right = x1;
 //Coins image rotate
@@ -22,11 +22,11 @@ if (timer >= coins_image_spd) {
 	timer++;
 scDrawRect(x1, y1, x2, y2, c, true, 0.4);
 scDrawText(x2 - ui_xbuffer, ymid, text, c_white, ui_font_scale, noone, noone, fa_right);
-draw_sprite(coins_sprite, coins_image_current, x1 + ui_xbuffer + coins_sprite_width, ymid); //coins image
+draw_sprite(coins_sprite, coins_image_current, x1 + ui_xbuffer + (coins_sprite_width / 4), ymid); //coins image
 
 //Health
 text = string(global.coins);
-x1 = x2right - health_barlen - health_sprite_width - ui_xbuffer * 3;
+x1 = x2right - health_barlen - health_sprite_width - (ui_xbuffer * 3);
 x2 = x2right;
 x2right = x1;
 scDrawRect(x1, y1, x2, y2, c, true, 0.4);
@@ -39,7 +39,7 @@ draw_sprite(health_sprite, 0, x1 + ui_xbuffer, ymid); //hp image
 
 //Open button
 var scale = ui_font_scale;
-x2 = x1left + string_width(text_open) + ui_xbuffer * 2;
+x2 = x1left + (string_width(text_open) * scale) + ui_xbuffer * 2;
 x1 = x1left;
 x1left = x2;
 if (scMouseHovering(x1, y1, x2, y2)) {
@@ -56,7 +56,7 @@ scDrawText((x1 + x2) / 2, ymid, text_open, c_white, scale);
 //Snap-to-grid button
 scale = ui_font_scale;
 text = global.grid_snap ? "SNAP TO GRID ON" : "SNAP TO GRID OFF"
-x2 = x1left + string_width(text) + ui_xbuffer * 2;
+x2 = x1left + (string_width(text) * scale) + ui_xbuffer * 2;
 x1 = x1left;
 x1left = x1;
 scDrawRect(x1, y1, x2, y2, c, true, 0.4);

@@ -33,7 +33,7 @@ health_sprite = sHealth;
 health_sprite_width = sprite_get_width(health_sprite);
 health_barlen = 100;
 
-ui_height[DISPLAY_TYPE.CLOSED] = RES_H - 30; //x1, y1, x2, y2 OPEN THE MENU
+ui_height[DISPLAY_TYPE.CLOSED] = RES_H - (ui_font_height + (ui_ybuffer * 2)); //x1, y1, x2, y2 OPEN THE MENU
 ui_height[DISPLAY_TYPE.OPEN] = RES_H - 120; //x1, y1, x2, y2 CLOSE THE MENU
 ui_height[DISPLAY_TYPE.EDITTING] = ui_height[DISPLAY_TYPE.OPEN];
 ui_height_current = ui_height[display];
