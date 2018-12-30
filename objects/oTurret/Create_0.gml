@@ -5,4 +5,5 @@ placeable = true; //Can place the turret
 
 first_draw = false;
 
-targetting = TURRET_POINT.CLOSEST; //Default targetting
+target = noone;
+targetting = TURRET_POINT.FIRST; //Default targetting

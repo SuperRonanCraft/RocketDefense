@@ -8,6 +8,7 @@ if (placing) {
 			placing = false;
 			owner.turrets_placing = false;
 			scWeaponStart(turret_map[? TURRETS_MAP.WEAPON]);
+			scTurretEdit(id); //Start to edit this turret
 		}
 	} else if (mouse_check_button_pressed(mb_right)) {
 		owner.turrets_placing = false;
@@ -24,9 +25,9 @@ if (placing) {
 	//Can you shoot?
 	var canshoot = distance_to_object(oEnemy) <= turret_map[? TURRETS_MAP.RADIUS];
 	if (canshoot) {
-		var target = scTurretTarget(oEnemy, turret_map[? TURRETS_MAP.RADIUS], targetting);
-		if (target != noone)
-			scRotateToTarget(id, target, 5, 1, weapon_map[? WEAPON_MAP.SPEED] * turret_map[? TURRETS_MAP.WEAPON_SPEEDBUFF]);
+		target = scTurretTarget(oEnemy, turret_map[? TURRETS_MAP.RADIUS], targetting);
+		with (target)
+			scRotateToTarget(other.id, id, 5, other.weapon_map[? WEAPON_MAP.SPEED]);
 		scWeaponShoot();
 		script_execute(turret_map[? TURRETS_MAP.SCRIPT_AIMING])
 	} else 

@@ -11,6 +11,21 @@ switch (targtype) {
 	case TURRET_POINT.CLOSEST:
 		shootingAt = instance_nearest(x, y, target);
 		break;
+	case TURRET_POINT.FIRST:
+		var targs = ds_list_create();
+		with (target)
+			if (distance_to_point(other.x, other.y) <= rad)
+			    ds_list_add(targs, id);
+		if (!ds_list_empty(targs)) {
+			var farthestOnPath = 0;
+			for (var i = 0; i <= ds_list_size(targs); i++) {
+				var enemy = ds_list_find_value(targs, i);
+				var dist = enemy.path_position;
+			    if (dist > farthestOnPath) {shootingAt = enemy; farthestOnPath = dist;}
+			}
+		}
+		ds_list_destroy(targs);
+		break;
 	case TURRET_POINT.FARTHEST:
 		var targs = ds_list_create();
 		with (target)
@@ -21,7 +36,6 @@ switch (targtype) {
 			for (var i = 0; i <= ds_list_size(targs); i++) {
 				var enemy = ds_list_find_value(targs, i);
 				var dist = distance_to_point(enemy.x, enemy.y);
-			        //now if it's in mid-range, damage it again
 			    if (dist > farthestdist) {shootingAt = enemy; farthestdist = dist;}
 			}
 		}
@@ -37,7 +51,6 @@ switch (targtype) {
 			for (var i = 0; i <= ds_list_size(targs); i++) {
 				var enemy = ds_list_find_value(targs, i);
 				var h = enemy.hp;
-			        //now if it's in mid-range, damage it again
 			    if (h > highesthp) {shootingAt = enemy; highesthp = h}
 			}
 		}
@@ -53,7 +66,6 @@ switch (targtype) {
 			for (var i = 0; i <= ds_list_size(targs); i++) {
 				var enemy = ds_list_find_value(targs, i);
 				var h = enemy.hp;
-			        //now if it's in mid-range, damage it again
 			    if (h < lowesthp) {shootingAt = enemy; lowesthp = h}
 			}
 			if (shootingAt == noone) shootingAt = instance_nearest(x, y, target);

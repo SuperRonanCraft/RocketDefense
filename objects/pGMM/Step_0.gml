@@ -1,24 +1,24 @@
 /// @desc create turrets
 
-if (display == DISPLAY_TYPE.CLOSED) exit;
+//if (display != DISPLAY_TYPE.NORMAL) exit;
 
-if (ui_height_current == ui_height[display])
-	if (mouse_x_old != device_mouse_x_to_gui(0) || mouse_y_old != device_mouse_y_to_gui(0)) { //Mouse is moving
-		mouse_x_old = device_mouse_x_to_gui(0);
-		mouse_y_old = device_mouse_y_to_gui(0);
-		var ytop = ui_height_current;
-		if (mouse_y_old > ytop + turrets_y - turrets_height && mouse_y_old < ytop + turrets_y + turrets_height) {
-			var option = -1;
-			for (var i = 0; i < array_length_1d(turrets); i++)
-				if (mouse_x_old > turrets_x - (turrets_offset * i) - turrets_length && 
-					mouse_x_old < turrets_x - (turrets_offset * i) + turrets_length) {
-					option = i;
-					break;
-				}
-			turrets_option = option;
-		} else
-			turrets_option = -1;
-	}
+//Selecting a turret
+if (mouse_x_old != device_mouse_x_to_gui(0) || mouse_y_old != device_mouse_y_to_gui(0)) { //Mouse is moving
+	mouse_x_old = device_mouse_x_to_gui(0);
+	mouse_y_old = device_mouse_y_to_gui(0);
+	var ytop = ui_height_top;
+	if (mouse_y_old > ytop + turrets_y - turrets_height && mouse_y_old < ytop + turrets_y + turrets_height) {
+		var option = -1;
+		for (var i = 0; i < array_length_1d(turrets); i++)
+			if (mouse_x_old > turrets_x - (turrets_offset * i) - turrets_length && 
+				mouse_x_old < turrets_x - (turrets_offset * i) + turrets_length) {
+				option = i;
+				break;
+			}
+		turrets_option = option;
+	} else
+		turrets_option = -1;
+}
 
 var key_select = mouse_check_button_released(mb_left) || keyboard_key_release(vk_enter);
 

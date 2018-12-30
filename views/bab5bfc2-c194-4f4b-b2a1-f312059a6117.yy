@@ -10,7 +10,9 @@
         "8b3f6bba-da8b-4db7-9049-70ff5341c04b",
         "95586f1f-f258-4f45-8315-aec50e1786b1",
         "2c533d0b-af1d-444f-b4c9-2892f0e1535d",
-        "77f0960c-cf36-4b73-aa3c-c1d804ea24d6"
+        "77f0960c-cf36-4b73-aa3c-c1d804ea24d6",
+        "2c401173-d9dc-4a91-b3db-679458cbcc31",
+        "baa56110-3ad2-4fbd-8848-bd4f43256c5c"
     ],
     "filterType": "GMScript",
     "folderName": "Utilities",

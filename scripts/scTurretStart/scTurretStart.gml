@@ -21,19 +21,20 @@ ds_map_set(turrets[val], TURRETS_MAP.WEAPON_DAMAGEBUFF, 3);
 val = TURRETS.LASER;
 turrets[val] = ds_map_create();
 ds_map_copy(turrets[val], def);
-ds_map_set(turrets[val], TURRETS_MAP.RADIUS, 150);
-ds_map_set(turrets[val], TURRETS_MAP.COST, 100);
+ds_map_set(turrets[val], TURRETS_MAP.RADIUS, 450);
+ds_map_set(turrets[val], TURRETS_MAP.COST, 150);
 ds_map_set(turrets[val], TURRETS_MAP.SPRITE, sTurret2);
+ds_map_set(turrets[val], TURRETS_MAP.WEAPON_SPEEDBUFF, 0.5);
 
-val = TURRETS.MACHINE_GUN;
+val = TURRETS.FLAME_THROWER;
 turrets[val] = ds_map_create();
 ds_map_copy(turrets[val], def);
-ds_map_set(turrets[val], TURRETS_MAP.RADIUS, 150);
-ds_map_set(turrets[val], TURRETS_MAP.COST, 100);
+ds_map_set(turrets[val], TURRETS_MAP.RADIUS, 250);
+ds_map_set(turrets[val], TURRETS_MAP.COST, 300);
 ds_map_set(turrets[val], TURRETS_MAP.SPRITE, sTurret2);
 
 enum TURRETS {
-	CANNON, MACHINE_GUN, LASER, 
+	CANNON, MACHINE_GUN, LASER, FLAME_THROWER,
 	
 	//Keep last
 	LENGTH

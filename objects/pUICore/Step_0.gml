@@ -141,8 +141,8 @@ if ((key_enter || key_enter_mouse) && menu_option[page] != -1) {
 		case menu_element_type.input: //Simply inputting a character
 			inputting = !inputting; break;
 	}
-	show_debug_message("ENTERING " + string(irandom(100)));
-	show_debug_message("KEY " + string(key_enter));
-	show_debug_message("MOUSE " + string(key_enter_mouse));
+	//show_debug_message("ENTERING " + string(irandom(100)));
+	//show_debug_message("KEY " + string(key_enter));
+	//show_debug_message("MOUSE " + string(key_enter_mouse));
 	//audio_play_sound(SOUND.UI_SELECT, 5, false); //Confirm sound
 }
