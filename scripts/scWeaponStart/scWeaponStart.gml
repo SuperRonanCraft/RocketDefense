@@ -3,19 +3,30 @@
 
 var buff_spd = turret_map[? TURRETS_MAP.WEAPON_SPEEDBUFF];
 //DEFAULT
-wep = WEAPON.DEFAULT;
+var wep = WEAPON.DEFAULT;
 weapons[wep] = ds_map_create();
 ds_map_add(weapons[wep], WEAPON_MAP.TYPE, wep);
 ds_map_add(weapons[wep], WEAPON_MAP.NAME, "Default");
 ds_map_add(weapons[wep], WEAPON_MAP.DESCRIPTION, "Explosive  device");
 ds_map_add(weapons[wep], WEAPON_MAP.RECOIL, 2);
 ds_map_add(weapons[wep], WEAPON_MAP.PROJECTILE, WEAPON_SPRITE.DEFAULT);
-ds_map_add(weapons[wep], WEAPON_MAP.COOLDOWN, 20);
-ds_map_add(weapons[wep], WEAPON_MAP.SPEED, 4 * buff_spd);
+ds_map_add(weapons[wep], WEAPON_MAP.COOLDOWN, 60);
+ds_map_add(weapons[wep], WEAPON_MAP.SPEED, 20 * buff_spd);
+
+wep = WEAPON.SPIKES;
+weapons[wep] = ds_map_create();
+ds_map_add(weapons[wep], WEAPON_MAP.TYPE, wep);
+ds_map_add(weapons[wep], WEAPON_MAP.NAME, "Default");
+ds_map_add(weapons[wep], WEAPON_MAP.DESCRIPTION, "Explosive  device");
+ds_map_add(weapons[wep], WEAPON_MAP.RECOIL, 2);
+ds_map_add(weapons[wep], WEAPON_MAP.PROJECTILE, WEAPON_SPRITE.DEFAULT);
+ds_map_add(weapons[wep], WEAPON_MAP.COOLDOWN, 40);
+ds_map_add(weapons[wep], WEAPON_MAP.SPEED, 20 * buff_spd);
 
 enum WEAPON {
 	NONE,
-	DEFAULT, 
+	DEFAULT,
+	SPIKES,
 	
 	//KEEP LAST
 	LENGHT

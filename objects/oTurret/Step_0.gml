@@ -23,11 +23,11 @@ if (placing) {
 } else {
 	if (turret_map == noone) exit;
 	//Can you shoot?
-	var canshoot = distance_to_object(oEnemy) <= turret_map[? TURRETS_MAP.RADIUS];
+	var canshoot = current_cd == 0 && distance_to_object(oEnemy) <= turret_map[? TURRETS_MAP.RADIUS];
 	if (canshoot) {
 		target = scTurretTarget(oEnemy, turret_map[? TURRETS_MAP.RADIUS], targetting);
 		with (target)
-			scRotateToTargetNEW(other.id, id, other.weapon_map[? WEAPON_MAP.SPEED]);
+			scRotateToTarget(other.id, id, other.weapon_map[? WEAPON_MAP.SPEED]);
 		scWeaponShoot();
 		script_execute(turret_map[? TURRETS_MAP.SCRIPT_AIMING])
 	} else 

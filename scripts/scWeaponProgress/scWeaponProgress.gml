@@ -2,9 +2,8 @@
 
 
 if (weapon_map[? WEAPON_MAP.PROJECTILE] == -1 || weapon_map[? WEAPON_MAP.TYPE] == WEAPON.NONE) exit;
-//Set the direction of the rocket
 
-//Rocket
+//Shoot
 if (current_delay == 0) {
 	if (ammo != 0) {
 		var offset = weapon_map[? WEAPON_MAP.OFFSET];
@@ -34,7 +33,7 @@ if (current_delay == 0) {
 current_delay = max(-1, current_delay - 1);
 if (current_delay == -1)
 	current_cd = max(0, current_cd - 1);
-current_recoil = max(0, floor(current_recoil * 0.8));
+//current_recoil = max(0, floor(current_recoil * 0.8));
 
 //Reload
 if (ammo == 0)

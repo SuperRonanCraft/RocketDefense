@@ -6,4 +6,6 @@ if (current_cd == 0 || (argument_count > 0 ? argument[0] : false)) {
 	//y = other.y;
 	current_cd = weapon_map[? WEAPON_MAP.COOLDOWN];
 	current_delay = weapon_map[? WEAPON_MAP.STARTUP];
+	return true;
 }
+return false;
