@@ -27,7 +27,7 @@ if (placing) {
 	if (canshoot) {
 		target = scTurretTarget(oEnemy, turret_map[? TURRETS_MAP.RADIUS], targetting);
 		with (target)
-			scRotateToTarget(other.id, id, 5, other.weapon_map[? WEAPON_MAP.SPEED]);
+			scRotateToTargetNEW(other.id, id, other.weapon_map[? WEAPON_MAP.SPEED]);
 		scWeaponShoot();
 		script_execute(turret_map[? TURRETS_MAP.SCRIPT_AIMING])
 	} else 
