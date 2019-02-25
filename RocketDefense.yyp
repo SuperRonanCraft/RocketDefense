@@ -575,6 +575,14 @@
             }
         },
         {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "fe142c0c-7c4e-490a-9bb7-0fd4fb6c5af6",
+                "resourcePath": "options\\linux\\options_linux.yy",
+                "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
             "Key": "aacbfef1-4b19-4a12-8a82-55113dd242fd",
             "Value": {
                 "id": "36c0464f-c60c-4c28-9c2d-9f918c58325b",
@@ -884,6 +892,14 @@
                 "id": "4f718643-3d2b-45c2-8ee5-c0a0c6e5629b",
                 "resourcePath": "objects\\oWeapon\\oWeapon.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
+            "Value": {
+                "id": "8ec26bab-bfbe-4d84-9919-bd57ec75d87f",
+                "resourcePath": "options\\mac\\options_mac.yy",
+                "resourceType": "GMMacOptions"
             }
         },
         {
